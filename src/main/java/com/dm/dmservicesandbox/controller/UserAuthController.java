@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.*;
 
 @Slf4j
 @RestController
-@CrossOrigin(origins = "http://localhost:8080")
+@CrossOrigin(maxAge = 3600, allowCredentials = "true", origins = "http://localhost:4200")
 @RequestMapping("/dm/userAuth")
 public class UserAuthController {
 
